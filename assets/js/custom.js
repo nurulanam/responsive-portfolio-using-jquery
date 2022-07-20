@@ -49,11 +49,17 @@ jQuery(document).ready(function () {
     });
     jQuery(window).resize(function () {
         var width = jQuery("body").width();
-        if (width <= 767) {
+        if (width < 768) {
             jQuery("nav").addClass("fixed");
-            jQuery("body").css({'overflow' : 'scroll'});
+            jQuery("body").css({'overflow' : 'auto'});
+            jQuery(".profile").css({'display' : 'none'});
+            jQuery(".home").css({'display' : 'block'});
+            jQuery(".about").css({'display' : 'none'});
+            jQuery(".service").css({'display' : 'none'});
+            jQuery(".portfolio").css({'display' : 'none'});
+            jQuery(".contact").css({'display' : 'none'});
             jQuery("#home").click(function(){
-                jQuery(".home").css({'display' : 'block'});
+                jQuery(".home").css({'display' : 'block', 'position' : 'absolute', 'left' : '0', 'z-index' : '-1'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
                 jQuery(".portfolio").css({'display' : 'none'});
@@ -61,7 +67,7 @@ jQuery(document).ready(function () {
             });
             jQuery("#about").click(function(){
                 jQuery(".home").css({'display' : 'none'});
-                jQuery(".about").css({'display' : 'block'});
+                jQuery(".about").css({'display' : 'block', 'position' : 'absolute', 'left' : '0', 'z-index' : '-1'});
                 jQuery(".service").css({'display' : 'none'});
                 jQuery(".portfolio").css({'display' : 'none'});
                 jQuery(".contact").css({'display' : 'none'});
@@ -69,7 +75,7 @@ jQuery(document).ready(function () {
             jQuery("#service").click(function(){
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'none'});
-                jQuery(".service").css({'display' : 'block'});
+                jQuery(".service").css({'display' : 'block', 'position' : 'absolute', 'left' : '0', 'z-index' : '-1'});
                 jQuery(".portfolio").css({'display' : 'none'});
                 jQuery(".contact").css({'display' : 'none'});
             });
@@ -77,7 +83,7 @@ jQuery(document).ready(function () {
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
-                jQuery(".portfolio").css({'display' : 'block'});
+                jQuery(".portfolio").css({'display' : 'block', 'position' : 'absolute', 'left' : '0', 'z-index' : '-1'});
                 jQuery(".contact").css({'display' : 'none'});
             });
             jQuery("#contact").click(function(){
@@ -85,7 +91,7 @@ jQuery(document).ready(function () {
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
                 jQuery(".portfolio").css({'display' : 'none'});
-                jQuery(".contact").css({'display' : 'block'});
+                jQuery(".contact").css({'display' : 'block', 'position' : 'absolute', 'left' : '0', 'z-index' : '-1'});
             });
         } else {
             jQuery("nav").removeClass("fixed");

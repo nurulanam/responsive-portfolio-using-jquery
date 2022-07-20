@@ -337,13 +337,13 @@ img {
     opacity: 0;
 }
 
-.fixed {
+/* .fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 4;
-}
+} */
 
 @media screen {
     .content{
@@ -376,7 +376,9 @@ img {
     nav {
         height: 20vh;
     }
-
+    .profile{
+        display: none;
+    }
     .menu ul {
         display: flex;
         justify-content: center;
@@ -388,11 +390,13 @@ img {
     .content .service,
     .content .portfolio,
     .content .contact {
-        position: inherit;
+        position: absolute;
         margin: 0;
         text-align: center;
         height: 90vh;
         padding-top: 10vh;
+        left: 0;
+        z-index: -1;
     }
 }
 
@@ -410,13 +414,13 @@ img {
         font-weight: 500;
     }
 
-    .content .home,
+    /* .content .home,
     .content .about,
     .content .service,
     .content .portfolio,
     .content .contact {
         position: inherit;
-    }
+    } */
 }
 
 @media print {
