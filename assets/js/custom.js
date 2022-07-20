@@ -49,8 +49,44 @@ jQuery(document).ready(function () {
     });
     jQuery(window).resize(function () {
         var width = jQuery("body").width();
-        if (width <= 768) {
+        if (width <= 767) {
             jQuery("nav").addClass("fixed");
+            jQuery("body").css({'overflow' : 'scroll'});
+            jQuery("#home").click(function(){
+                jQuery(".home").css({'display' : 'block'});
+                jQuery(".about").css({'display' : 'none'});
+                jQuery(".service").css({'display' : 'none'});
+                jQuery(".portfolio").css({'display' : 'none'});
+                jQuery(".contact").css({'display' : 'none'});
+            });
+            jQuery("#about").click(function(){
+                jQuery(".home").css({'display' : 'none'});
+                jQuery(".about").css({'display' : 'block'});
+                jQuery(".service").css({'display' : 'none'});
+                jQuery(".portfolio").css({'display' : 'none'});
+                jQuery(".contact").css({'display' : 'none'});
+            });
+            jQuery("#service").click(function(){
+                jQuery(".home").css({'display' : 'none'});
+                jQuery(".about").css({'display' : 'none'});
+                jQuery(".service").css({'display' : 'block'});
+                jQuery(".portfolio").css({'display' : 'none'});
+                jQuery(".contact").css({'display' : 'none'});
+            });
+            jQuery("#portfolio").click(function(){
+                jQuery(".home").css({'display' : 'none'});
+                jQuery(".about").css({'display' : 'none'});
+                jQuery(".service").css({'display' : 'none'});
+                jQuery(".portfolio").css({'display' : 'block'});
+                jQuery(".contact").css({'display' : 'none'});
+            });
+            jQuery("#contact").click(function(){
+                jQuery(".home").css({'display' : 'none'});
+                jQuery(".about").css({'display' : 'none'});
+                jQuery(".service").css({'display' : 'none'});
+                jQuery(".portfolio").css({'display' : 'none'});
+                jQuery(".contact").css({'display' : 'block'});
+            });
         } else {
             jQuery("nav").removeClass("fixed");
         }
