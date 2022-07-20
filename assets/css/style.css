@@ -338,13 +338,13 @@ img {
     opacity: 0;
 }
 
-/* .fixed {
+.fixed {
     position: fixed;
     top: 0;
     left: 0;
     right: 0;
     z-index: 4;
-} */
+}
 
 @media screen {
     .content{

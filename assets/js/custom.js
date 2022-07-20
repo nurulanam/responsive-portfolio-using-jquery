@@ -51,7 +51,7 @@ jQuery(document).ready(function () {
         var width = jQuery("body").width();
   
         if (width < 768) {
-            jQuery("nav").addClass("fixed");
+            jQuery(".menu").addClass("fixed");
             jQuery("body").css({'overflow' : 'auto'});
             jQuery(".profile").css({'display' : 'block'});
             jQuery(".home").css({'display' : 'none'});
@@ -109,7 +109,7 @@ jQuery(document).ready(function () {
                 jQuery(".contact").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
             });
         } else {
-            jQuery("nav").removeClass("fixed");
+            jQuery(".menu").removeClass("fixed");
             jQuery(".home").css({'display' : 'block'});
         }
     });
