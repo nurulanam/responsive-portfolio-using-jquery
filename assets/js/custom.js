@@ -49,37 +49,43 @@ jQuery(document).ready(function () {
     });
     jQuery(window).resize(function () {
         var width = jQuery("body").width();
+  
         if (width < 768) {
             jQuery("nav").addClass("fixed");
             jQuery("body").css({'overflow' : 'auto'});
-            jQuery(".profile").css({'display' : 'none'});
-            jQuery(".home").css({'display' : 'block'});
+            jQuery(".profile").css({'display' : 'block'});
+            jQuery(".home").css({'display' : 'none'});
             jQuery(".about").css({'display' : 'none'});
             jQuery(".service").css({'display' : 'none'});
             jQuery(".portfolio").css({'display' : 'none'});
             jQuery(".contact").css({'display' : 'none'});
             jQuery("#home").click(function(){
-                jQuery(".home").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
+                jQuery(".profile").css({'display' : 'block'});
+                jQuery(".home").css({'display' : 'none !important'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
                 jQuery(".portfolio").css({'display' : 'none'});
                 jQuery(".contact").css({'display' : 'none'});
             });
             jQuery("#about").click(function(){
+                jQuery(".profile").css({'display' : 'none'});
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
                 jQuery(".service").css({'display' : 'none'});
                 jQuery(".portfolio").css({'display' : 'none'});
                 jQuery(".contact").css({'display' : 'none'});
             });
-            jQuery(".about-more").click(function(){
-                jQuery(".home").css({'display' : 'none'});
-                jQuery(".about").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
-                jQuery(".service").css({'display' : 'none'});
-                jQuery(".portfolio").css({'display' : 'none'});
-                jQuery(".contact").css({'display' : 'none'});
-            });
+            // jQuery(".about-more").click(function(){
+            //     jQuery(".profile").css({'display' : 'none'});
+            //     jQuery(".profile").css({'display' : 'none'});
+
+            //     jQuery(".about").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
+            //     jQuery(".service").css({'display' : 'none'});
+            //     jQuery(".portfolio").css({'display' : 'none'});
+            //     jQuery(".contact").css({'display' : 'none'});
+            // });
             jQuery("#service").click(function(){
+                jQuery(".profile").css({'display' : 'none'});
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'block', 'position' : 'absolute', 'left' : '0'});
@@ -87,6 +93,7 @@ jQuery(document).ready(function () {
                 jQuery(".contact").css({'display' : 'none'});
             });
             jQuery("#portfolio").click(function(){
+                jQuery(".profile").css({'display' : 'none'});
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
@@ -94,6 +101,7 @@ jQuery(document).ready(function () {
                 jQuery(".contact").css({'display' : 'none'});
             });
             jQuery("#contact").click(function(){
+                jQuery(".profile").css({'display' : 'none'});
                 jQuery(".home").css({'display' : 'none'});
                 jQuery(".about").css({'display' : 'none'});
                 jQuery(".service").css({'display' : 'none'});
@@ -102,6 +110,7 @@ jQuery(document).ready(function () {
             });
         } else {
             jQuery("nav").removeClass("fixed");
+            jQuery(".home").css({'display' : 'block'});
         }
     });
     jQuery(".black-c").click(function(){

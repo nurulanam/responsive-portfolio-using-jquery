@@ -57,6 +57,7 @@ nav {
     box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.55);
     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.55);
     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.55);
+    z-index: 4;
 }
 
 .menu ul li {
@@ -376,18 +377,17 @@ img {
     nav {
         height: 20vh;
     }
-    .menu{
-        z-index: 2;
-    }
-    .profile{
+    /* .profile{
         display: none;
-    }
+    } */
     .menu ul {
         display: flex;
         justify-content: center;
         align-items: inherit;
     }
-
+    .content .home{
+        display: none;
+    }
     .content .home,
     .content .about,
     .content .service,
@@ -399,7 +399,7 @@ img {
         height: 90vh;
         padding-top: 20vh;
         left: 0;
-        /* z-index: -1; */
+        z-index: 3;
     }
 }
 
