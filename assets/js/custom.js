@@ -50,7 +50,7 @@ jQuery(document).ready(function () {
     jQuery(window).resize(function () {
         var width = jQuery("body").width();
   
-        if (width < 768) {
+        if (width > 0 && width < 768) {
             jQuery(".menu").addClass("fixed");
             jQuery("body").css({'overflow' : 'auto'});
             jQuery(".profile").css({'display' : 'block'});
