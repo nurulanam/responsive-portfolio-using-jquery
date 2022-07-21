@@ -130,8 +130,8 @@ nav {
 }
 .own-top-b {
     background: transparent;
-    background: -webkit-linear-gradient(to top, #2f93ef, transparent);
-    background: linear-gradient(to top, #2f93ef, transparent);
+    background: -webkit-linear-gradient(to top, #3778c2, transparent);
+    background: linear-gradient(to top, #3778c2, transparent);
 
     height: 50vh;
     width: 100%;
@@ -141,7 +141,7 @@ nav {
 .own-top-b::before {
     content: '';
     position: absolute;
-    border-left: 40vh solid #242424;
+    border-left: 40vh solid #103e72;
     border-right: 40vh solid transparent;
     border-top: 15vh solid transparent;
     bottom: 0;
@@ -152,13 +152,13 @@ nav {
     content: '';
     position: absolute;
     border-left: 40vh solid transparent;
-    border-right: 40vh solid #242424;
+    border-right: 40vh solid #103e72;
     border-top: 15vh solid transparent;
     bottom: 0;
     right: 0;
 }
 
-img {
+.avater-img {
     height: 150px;
     width: 150px;
     border: 6px solid rgba(61, 11, 160, 0.693);
@@ -193,7 +193,7 @@ img {
     background: #4A00E0;
 }
 .color-ch ul button.black-c{
-    background: #242424;
+    background: #103e72;
 }
 .own-details {
     height: 50vh;
@@ -239,16 +239,16 @@ img {
     height: 50vh;
     width: 100%;
     padding-top: 15vh;
-    background: #242424;
+    background: #103e72;
     /* fallback for old browsers */
-    background: -webkit-linear-gradient(to bottom, #2f93ef, #242424);
-    background: linear-gradient(to bottom, #2f93ef, #242424);
+    background: -webkit-linear-gradient(to bottom, #3778c2, transparent);
+    background: linear-gradient(to bottom, #3778c2, transparent);
     position: relative;
 }
 .black-c-m::before {
     content: '';
     position: absolute;
-    border-left: 40vh solid #242424;
+    border-left: 40vh solid #103e72;
     border-right: 40vh solid transparent;
     border-bottom: 15vh solid transparent;
     top: 0;
@@ -269,7 +269,7 @@ img {
     content: '';
     position: absolute;
     border-left: 40vh solid transparent;
-    border-right: 40vh solid #242424;
+    border-right: 40vh solid #103e72;
     border-bottom: 15vh solid transparent;
     top: 0;
     right: 0;
@@ -314,6 +314,12 @@ img {
     bottom: -100%;
     background: #8E2DE2;
     opacity: 0;
+}
+.content .service img{
+   border: 3px solid #fff;
+   box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
 }
 
 .content .portfolio {

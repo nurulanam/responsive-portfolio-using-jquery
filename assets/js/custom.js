@@ -114,16 +114,16 @@ jQuery(document).ready(function () {
         }
     });
     jQuery(".black-c").click(function(){
-        jQuery("body").css({'background' : '#242424'});
-        jQuery(".menu").css({'background' : '#2f93ef'});
+        jQuery("body").css({'background' : '#103e72'});
+        jQuery(".menu").css({'background' : '#3778c2'});
         jQuery(".own-top").addClass("own-top-b").removeClass("own-top");
         jQuery(".own-top-b img").css({'border-color' : '#0d5aa2'});
         jQuery(".own-details").addClass("black-c-m").removeClass("own-details");
-        jQuery(".home").css({'background' : '#2f93ef'});
-        jQuery(".about").css({'background' : '#2f93ef'});
-        jQuery(".service").css({'background' : '#2f93ef'});
-        jQuery(".portfolio").css({'background' : '#2f93ef'});
-        jQuery(".contact").css({'background' : '#2f93ef'});
+        jQuery(".home").css({'background' : '#3778c2'});
+        jQuery(".about").css({'background' : '#3778c2'});
+        jQuery(".service").css({'background' : '#3778c2'});
+        jQuery(".portfolio").css({'background' : '#3778c2'});
+        jQuery(".contact").css({'background' : '#3778c2'});
     });
     jQuery(".blue-c").click(function(){
         jQuery("body").css({'background' : '#4A00E0'});
