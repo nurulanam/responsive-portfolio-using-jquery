@@ -383,6 +383,15 @@ img {
         justify-content: center;
         align-items: inherit;
     }
+    .profile{
+        overflow: auto;
+        position: absolute;
+        right: 0;
+        left: 0;
+    }
+    .profile .own-top {
+        height: 30vh;
+    }
     .content .home{
         display: none;
     }
