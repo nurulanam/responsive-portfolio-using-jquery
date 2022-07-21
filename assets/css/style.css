@@ -84,8 +84,11 @@ nav {
 
 }
 
-.menu ul li:hover a span {
+.menu ul li:hover a .purple {
     color: rgb(61, 11, 160);
+}
+.menu ul li:hover a .blue {
+    color: #103E72;
 }
 
 .menu ul li:hover a i {
@@ -332,7 +335,13 @@ nav {
     background: #8E2DE2;
     opacity: 0;
 }
-
+.content .portfolio img{
+    border: 3px solid #fff;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+     -webkit-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+     -moz-box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.3);
+ }
+ 
 .content .contact {
     height: 100%;
     padding: 5vh;

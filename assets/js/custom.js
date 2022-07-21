@@ -116,6 +116,7 @@ jQuery(document).ready(function () {
     jQuery(".black-c").click(function(){
         jQuery("body").css({'background' : '#103e72'});
         jQuery(".menu").css({'background' : '#3778c2'});
+        jQuery(".menu a span").addClass("blue").removeClass("purple");
         jQuery(".own-top").addClass("own-top-b").removeClass("own-top");
         jQuery(".own-top-b img").css({'border-color' : '#0d5aa2'});
         jQuery(".own-details").addClass("black-c-m").removeClass("own-details");
@@ -128,6 +129,7 @@ jQuery(document).ready(function () {
     jQuery(".blue-c").click(function(){
         jQuery("body").css({'background' : '#4A00E0'});
         jQuery(".menu").css({'background' : '#8E2DE2'});
+        jQuery(".menu a span").addClass("purple").removeClass("blue");
         jQuery(".own-top-b").addClass("own-top").removeClass("own-top-b");
         jQuery(".own-top-b img").css({'border-color' : 'rgba(61, 11, 160, 0.693)'});
         jQuery(".black-c-m").addClass("own-details").removeClass("black-c-m");
